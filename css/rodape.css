@@ -1,0 +1,140 @@
+.rodape {
+    background-color: black;
+    color: white;
+    padding: 4rem 8rem;
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__logo {
+    width: 160px;
+}
+
+.rodape__navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rodape__lista {
+    display: flex;
+}
+
+.rodape__redes {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.rodape__redes div {
+    margin-right: 1rem;
+}
+
+.rodape__item {
+    list-style-type: none;
+    color: white;
+    margin-top: 2rem;
+}
+
+.rodape__link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.rodape__link:hover {
+    padding-bottom: 5px;
+    border-bottom: solid white 2px;
+}
+
+.twitter,
+.facebook,
+.instagram,
+.pinterest {
+    cursor: pointer;
+}
+
+.rodape__assinatura {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -185px;
+    margin-bottom: 14px;
+}
+
+.rodape__assinatura a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape__assinatura a:first-child {
+    font-style: italic;
+}
+
+.rodape__assinatura a:last-child {
+    font-weight: bold;
+}
+
+.rodape__assinatura img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:880px) {
+    .rodape {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .rodape__conteudo {
+        align-items: center;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__link {
+        text-decoration: none;
+        margin-right: 0rem;
+    }
+
+    .rodape__navegacao {
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .rodape__redes {
+        align-items: center;
+        display: flex;
+        margin-bottom: 2rem;
+        width: 180px;
+        justify-content: space-around;
+    }
+
+    .twitter,
+    .facebook,
+    .instagram,
+    .pinterest {
+        margin: 0%;
+    }
+
+    .rodape__assinatura {
+        position:unset;
+        bottom: 0;
+        bottom: unset;
+        left: unset;
+        margin-left: unset;
+        margin-bottom: unset;
+        text-align: center;
+        padding: 2rem 2rem 0 2rem;
+    }
+}
